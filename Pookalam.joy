@@ -1,0 +1,40 @@
+#outer circle
+c1 = circle(r=150, fill="brown")
+#outer rectangle
+r1 = rectangle(w=210, h=210, fill="red", stroke="brown") | repeat(15, rotate(50))
+r2 = rectangle(w=195, h=195, fill="yellow", stroke="red") | rotate(15) | repeat(15, rotate(50))
+show(c1,r1,r2)
+
+#inner circles
+c2 = circle(r=123, fill="black", stroke="none")
+show(c2)
+c3 = circle(r=113, fill="violet", stroke="none")
+show(c3)
+
+#first petal layer
+petal = ellipse(w=80, h=110, fill="white", stroke="none") | translate(y=-60)
+star1= petal | repeat(8, rotate(45))
+show(star1)
+
+#inner rectangles
+r3 = rectangle (w=148,h=148,fill="yellow", stroke="yellow")|rotate(30) | repeat (40,rotate(30))
+r4 = rectangle (w=120,h=120,fill="red", stroke="red")|rotate(0) | repeat (40,rotate(30))
+r5 = rectangle (w=100,h=100,fill="brown", stroke="brown")|rotate(15) | repeat (30,rotate(30))
+show(r3,r4,r5)
+
+#inner flower pattern
+petal1 = ellipse(w=25, h=70, fill="white", stroke="brown") | translate(y=-25)
+star1 = petal1 | repeat(24, rotate(15))
+petal2 = ellipse(w=20, h=60, fill="brown", stroke="white") | translate(y=-20)
+star2 = petal2 |rotate(7.5)| repeat(24, rotate(15))
+petal3 = ellipse(w=15, h=50, fill="red", stroke="brown") | translate(y=-15)
+star3 = petal3 |rotate(7.4)| repeat(25, rotate(15))
+petal4 = ellipse(w=10, h=40, fill="yellow", stroke="red") | translate(y=-10)
+star4 = petal4 |rotate(7.4)| repeat(25, rotate(15))
+show(star1, star2,star3,star4)
+
+#circles at centre
+c4 = circle(r=20, fill="brown")
+show(c4)
+c5 = circle(r=16, fill="yellow")
+show(c5)
