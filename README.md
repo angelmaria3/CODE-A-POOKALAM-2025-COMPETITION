@@ -20,7 +20,7 @@ The design has multiple colorful layers:
 
 
 ### Preview
-My Pookalam(pookalam.png)
+My Pookalam(pookalam.jpg)
 
 ### Features
 - Colorful geometric patterns – layered circles, rectangles, and petals create a vibrant, symmetrical design.
